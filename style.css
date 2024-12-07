@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+nav{
+    width: 100%;
+    height: 90px;
+    background-color: rgb(243, 238, 229);
+    color: rgb(202, 52, 102);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.logo-container{
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav-container ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-container ul .nav-link{
+    text-transform: capitalize;
+    border-bottom:2px solid transparent ;
+    transition: 0.2s all ease-in-out;
+}
+
+.nav-container ul .nav-link:hover{
+    border-bottom: 2px solid white;
+}
+main{
+    width: 100%;
+    height: calc(100% - 90px);
+    background-color:pink;
+    padding: 75px 75px 150px 50px;
+}
+
+.main-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.main-infos-container{
+    width: calc(100% - 550px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-content{
+    margin-bottom: 50px;
+    margin-top: -250px;
+}
+
+.text-content h2{
+    margin-bottom: 12px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.text-content span{
+    color:rgb(204, 64, 111);
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+.button-content{
+    display: flex;
+    gap: 20px;
+}
+
+.button-content button{
+    cursor: pointer;
+    padding: 10px 34px;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    font-size: 25px;
+    font-weight: 600;
+    box-shadow: 4px 4px 0 0 rgb(213, 117, 149);
+    transition: 0.3s all ease-in-out;
+}
+
+.button-content button:hover {
+    box-shadow: -4px -4px 0 0 rgb(213, 117, 149);
+    animation: shake 0.3s 1 linear;
+}
+.main-image{
+    width: 500px;
+}
+
+.main-image img{
+    width: 100%;
+}
+
+.social-container{
+    position: absolute;
+    right: 25px;
+    top: 40%;
+}
+
+.social-container a .social-item{
+    font-size: 30px;
+    background-color: white;
+    margin-bottom: 5px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.3s all ease-in-out;
+}
+
+.social-container a .instagram:hover{
+    background-color: #E4405F;
+    color: white;
+}
+
+.social-container a .github:hover{
+    background-color: #131418;
+    color: white;
+}
+
+.social-container a .linkedln:hover{
+    background-color: #0A66C2;
+    color: white;
+}
+
+
+@keyframes shake {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(5deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-5deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }    
+}
